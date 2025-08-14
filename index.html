@@ -20,9 +20,9 @@
     <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-4xl">
         
         <div class="w-full rounded-lg overflow-hidden mb-6 shadow-lg">
-            <!-- IMAGEM CORRIGIDA -->
-            <img src="https://images.unsplash.com/photo-1543353071-873f6b6a2082?q=80&w=2070&auto=format&fit=crop" alt="Banner do evento com alimentos saudáveis" class="w-full h-auto object-cover">
-        </div>
+          <!-- CORREÇÃO: Vamos usar o nome do arquivo que você enviou -->
+<img src="Formação.png" alt="Banner do evento com alimentos saudáveis" class="w-full h-auto object-cover">
+
 
         <div id="form-container" class="bg-white p-8 rounded-lg shadow-lg">
             <div class="text-center mb-6">
@@ -102,10 +102,20 @@
                         <legend class="text-lg font-semibold text-gray-900 mb-4">3. Dados Profissionais</legend>
                         <div class="grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2">
                             <div class="sm:col-span-2"><label for="nre" class="block text-sm font-medium text-gray-700">NRE de Atuação</label><select id="nre" name="nre" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm form-select"><option value="">Selecione...</option><option>Área Metropolitana Norte</option><option>Área Metropolitana Sul</option><option>Apucarana</option><option>Assis Chateaubriand</option><option>Campo Mourão</option><option>Cascavel</option><option>Cianorte</option><option>Cornélio Procópio</option><option>Curitiba</option><option>Dois Vizinhos</option><option>Foz do Iguaçu</option><option>Francisco Beltrão</option><option>Goioerê</option><option>Guarapuava</option><option>Ibaiti</option><option>Irati</option><option>Ivaiporã</option><option>Jacarezinho</option><option>Laranjeiras do Sul</option><option>Loanda</option><option>Londrina</option><option>Maringá</option><option>Paranaguá</option><option>Paranavaí</option><option>Pato Branco</option><option>Pitanga</option><option>Ponta Grossa</option><option>Telêmaco Borba</option><option>Toledo</option><option>Umuarama</option><option>União da Vitória</option><option>Wenceslau Braz</option></select><div id="nre-error" class="error-text mt-1"></div></div>
-                            <div class="sm:col-span-2"><label class="block text-sm font-medium text-gray-700">Sua função</label><div class="mt-2 space-y-2"><div class="flex items-center"><input id="funcao_nutricionista" name="funcao" type="radio" value="nutricionista" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="funcao_nutricionista" class="ml-3 block text-sm font-medium text-gray-700">Nutricionista</label></div><div class="flex items-center"><input id="funcao_tecnico" name="funcao" type="radio" value="tecnico" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="funcao_tecnico" class="ml-3 block text-sm font-medium text-gray-700">Técnico da Alimentação Escolar</label></div></div><div id="funcao-error" class="error-text mt-1"></div></div>
+                            
+                            <!-- ✅ ALTERAÇÃO: Adicionada a opção Fundepar -->
+                            <div class="sm:col-span-2"><label class="block text-sm font-medium text-gray-700">Sua função</label><div class="mt-2 space-y-2"><div class="flex items-center"><input id="funcao_nutricionista" name="funcao" type="radio" value="nutricionista" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="funcao_nutricionista" class="ml-3 block text-sm font-medium text-gray-700">Nutricionista</label></div><div class="flex items-center"><input id="funcao_tecnico" name="funcao" type="radio" value="tecnico" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="funcao_tecnico" class="ml-3 block text-sm font-medium text-gray-700">Técnico da Alimentação Escolar</label></div><div class="flex items-center"><input id="funcao_fundepar" name="funcao" type="radio" value="fundepar" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="funcao_fundepar" class="ml-3 block text-sm font-medium text-gray-700">Fundepar</label></div></div><div id="funcao-error" class="error-text mt-1"></div></div>
+
+                            <!-- Container para opções de Técnico -->
                             <div id="contrato-tecnico-container" class="sm:col-span-2 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2 hidden">
-                                <div><label class="block text-sm font-medium text-gray-700">Qual o regime de contratação?</label><div class="mt-2 space-y-2"><div class="flex items-center"><input id="regime_terceirizado" name="regime_contratacao" type="radio" value="terceirizado" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="regime_terceirizado" class="ml-3 block text-sm font-medium text-gray-700">Terceirizado</label></div><div class="flex items-center"><input id="regime_qfeb" name="regime_contratacao" type="radio" value="qfeb" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="regime_qfeb" class="ml-3 block text-sm font-medium text-gray-700">QFEB</label></div></div><div id="regime_contratacao-error" class="error-text mt-1"></div></div>
-                                <div id="empresa-terceirizada-container" class="hidden"><label for="empresa_terceirizada" class="block text-sm font-medium text-gray-700">Se terceirizado, qual empresa?</label><select id="empresa_terceirizada" name="empresa_terceirizada" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm form-select"><option value="">Selecione...</option><option>Costa Oeste</option><option>Deltalimp</option><option>Servsul</option><option>Empralimp</option><option>Pontual</option><option>Outro</option></select><div id="empresa_terceirizada-error" class="error-text mt-1"></div></div>
+                                <div><label class="block text-sm font-medium text-gray-700">Qual o regime de contratação?</label><div class="mt-2 space-y-2"><div class="flex items-center"><input id="regime_tecnico_terceirizado" name="regime_tecnico" type="radio" value="terceirizado" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="regime_tecnico_terceirizado" class="ml-3 block text-sm font-medium text-gray-700">Terceirizado</label></div><div class="flex items-center"><input id="regime_tecnico_qfeb" name="regime_tecnico" type="radio" value="qfeb" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="regime_tecnico_qfeb" class="ml-3 block text-sm font-medium text-gray-700">QFEB</label></div></div><div id="regime_tecnico-error" class="error-text mt-1"></div></div>
+                                <div id="empresa-tecnico-container" class="hidden"><label for="empresa_tecnico" class="block text-sm font-medium text-gray-700">Se terceirizado, qual empresa?</label><select id="empresa_tecnico" name="empresa_tecnico" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm form-select"><option value="">Selecione...</option><option>Costa Oeste</option><option>Deltalimp</option><option>Servsul</option><option>Empralimp</option><option>Pontual</option><option>Outro</option></select><div id="empresa_tecnico-error" class="error-text mt-1"></div></div>
+                            </div>
+
+                            <!-- ✅ ALTERAÇÃO: Novo container para opções de Fundepar -->
+                            <div id="contrato-fundepar-container" class="sm:col-span-2 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2 hidden">
+                                <div><label class="block text-sm font-medium text-gray-700">Qual o seu vínculo (Fundepar)?</label><div class="mt-2 space-y-2"><div class="flex items-center"><input id="vinculo_fundepar_terceirizado" name="vinculo_fundepar" type="radio" value="terceirizado" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="vinculo_fundepar_terceirizado" class="ml-3 block text-sm font-medium text-gray-700">Terceirizado</label></div><div class="flex items-center"><input id="vinculo_fundepar_qfeb" name="vinculo_fundepar" type="radio" value="qfeb" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="vinculo_fundepar_qfeb" class="ml-3 block text-sm font-medium text-gray-700">QFEB</label></div><div class="flex items-center"><input id="vinculo_fundepar_estagiario" name="vinculo_fundepar" type="radio" value="estagiario" class="h-4 w-4 text-blue-600 border-gray-300 focus:ring-blue-500"><label for="vinculo_fundepar_estagiario" class="ml-3 block text-sm font-medium text-gray-700">Estagiário</label></div></div><div id="vinculo_fundepar-error" class="error-text mt-1"></div></div>
+                                <div id="empresa-fundepar-container" class="hidden"><label for="empresa_fundepar" class="block text-sm font-medium text-gray-700">Qual a empresa (Fundepar)?</label><input type="text" name="empresa_fundepar" id="empresa_fundepar" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm form-input"><div id="empresa_fundepar-error" class="error-text mt-1"></div></div>
                             </div>
                         </div>
                     </fieldset>
@@ -167,17 +177,44 @@
 
             const funcaoRadios = document.querySelectorAll('input[name="funcao"]');
             const contratoTecnicoContainer = document.getElementById('contrato-tecnico-container');
-            const regimeRadios = document.querySelectorAll('input[name="regime_contratacao"]');
-            const empresaContainer = document.getElementById('empresa-terceirizada-container');
+            const contratoFundeparContainer = document.getElementById('contrato-fundepar-container');
+            const regimeTecnicoRadios = document.querySelectorAll('input[name="regime_tecnico"]');
+            const empresaTecnicoContainer = document.getElementById('empresa-tecnico-container');
+            const vinculoFundeparRadios = document.querySelectorAll('input[name="vinculo_fundepar"]');
+            const empresaFundeparContainer = document.getElementById('empresa-fundepar-container');
+
+            const clearTecnicoFields = () => {
+                contratoTecnicoContainer.classList.add('hidden');
+                empresaTecnicoContainer.classList.add('hidden');
+                clearError('regime_tecnico');
+                clearError('empresa_tecnico');
+                document.querySelectorAll('input[name="regime_tecnico"]').forEach(r => r.checked = false);
+                document.getElementById('empresa_tecnico').value = '';
+            };
+            const clearFundeparFields = () => {
+                contratoFundeparContainer.classList.add('hidden');
+                empresaFundeparContainer.classList.add('hidden');
+                clearError('vinculo_fundepar');
+                clearError('empresa_fundepar');
+                document.querySelectorAll('input[name="vinculo_fundepar"]').forEach(r => r.checked = false);
+                document.getElementById('empresa_fundepar').value = '';
+            };
 
             funcaoRadios.forEach(r => r.addEventListener('change', (e) => {
-                if (e.target.value === 'tecnico') { contratoTecnicoContainer.classList.remove('hidden'); } 
-                else { contratoTecnicoContainer.classList.add('hidden'); empresaContainer.classList.add('hidden'); clearError('regime_contratacao'); clearError('empresa_terceirizada'); document.querySelectorAll('input[name="regime_contratacao"]').forEach(r => r.checked = false); document.getElementById('empresa_terceirizada').value = ''; }
+                clearTecnicoFields();
+                clearFundeparFields();
+                if (e.target.value === 'tecnico') { contratoTecnicoContainer.classList.remove('hidden'); }
+                if (e.target.value === 'fundepar') { contratoFundeparContainer.classList.remove('hidden'); }
             }));
 
-            regimeRadios.forEach(r => r.addEventListener('change', (e) => {
-                if (e.target.value === 'terceirizado') { empresaContainer.classList.remove('hidden'); } 
-                else { empresaContainer.classList.add('hidden'); clearError('empresa_terceirizada'); document.getElementById('empresa_terceirizada').value = ''; }
+            regimeTecnicoRadios.forEach(r => r.addEventListener('change', (e) => {
+                if (e.target.value === 'terceirizado') { empresaTecnicoContainer.classList.remove('hidden'); } 
+                else { empresaTecnicoContainer.classList.add('hidden'); clearError('empresa_tecnico'); document.getElementById('empresa_tecnico').value = ''; }
+            }));
+
+            vinculoFundeparRadios.forEach(r => r.addEventListener('change', (e) => {
+                if (e.target.value === 'terceirizado') { empresaFundeparContainer.classList.remove('hidden'); }
+                else { empresaFundeparContainer.classList.add('hidden'); clearError('empresa_fundepar'); document.getElementById('empresa_fundepar').value = ''; }
             }));
 
             const setError = (id, msg) => { document.getElementById(id)?.classList.add('error-input'); document.getElementById(`${id}-error`).innerText = msg; };
@@ -188,10 +225,10 @@
 
             const validateForm = () => {
                 let isValid = true;
-                ['termo_pre_inscricao', 'nome_completo', 'rg', 'cpf', 'email', 'celular', 'rua', 'numero', 'bairro', 'cidade', 'cep', 'nre', 'funcao', 'regime_contratacao', 'empresa_terceirizada', 'agencia', 'conta_corrente', 'termo_bancario'].forEach(clearError);
+                ['termo_pre_inscricao', 'nome_completo', 'rg', 'cpf', 'email', 'celular', 'rua', 'numero', 'bairro', 'cidade', 'cep', 'nre', 'funcao', 'regime_tecnico', 'empresa_tecnico', 'vinculo_fundepar', 'empresa_fundepar', 'agencia', 'conta_corrente', 'termo_bancario'].forEach(clearError);
                 if (!validateCheck('termo_pre_inscricao', 'Você precisa aceitar os termos.')) isValid = false;
                 if (!validate('nome_completo', v => v.length > 0, 'O nome completo é obrigatório.')) isValid = false;
-                if (!validate('rg', v => v.length > 0, 'O RG é obrigatório.')) isValid = false;
+                if (!validate('rg', v => v.includes('/'), 'Formato de RG inválido. Inclua a UF (Ex: 12345678/PR).')) isValid = false;
                 if (!validate('cpf', v => /^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(v), 'Formato de CPF inválido.')) isValid = false;
                 if (!validate('email', v => /^([a-zA-Z0-9._%-]+@gmail\.com|[a-zA-Z0-9._%-]+@escola\.pr\.gov\.br)$/.test(v), 'Email inválido.')) isValid = false;
                 if (!validate('celular', v => /^\d{11}$/.test(v.replace(/\D/g, '')), 'Celular inválido. Digite 11 números.')) isValid = false;
@@ -202,14 +239,25 @@
                 if (!validate('cep', v => /^\d{5}-\d{3}$/.test(v), 'Formato de CEP inválido.')) isValid = false;
                 if (!validate('nre', v => v !== '', 'Selecione um NRE.')) isValid = false;
                 if (!validateRadio('funcao', 'Selecione uma função.')) isValid = false;
+                
                 const funcao = document.querySelector('input[name="funcao"]:checked');
-                if (funcao && funcao.value === 'tecnico') {
-                    if (!validateRadio('regime_contratacao', 'Selecione um regime.')) isValid = false;
-                    const regime = document.querySelector('input[name="regime_contratacao"]:checked');
-                    if (regime && regime.value === 'terceirizado') {
-                        if (!validate('empresa_terceirizada', v => v !== '', 'Selecione uma empresa.')) isValid = false;
+                if (funcao) {
+                    if (funcao.value === 'tecnico') {
+                        if (!validateRadio('regime_tecnico', 'Selecione um regime.')) isValid = false;
+                        const regime = document.querySelector('input[name="regime_tecnico"]:checked');
+                        if (regime && regime.value === 'terceirizado') {
+                            if (!validate('empresa_tecnico', v => v !== '', 'Selecione uma empresa.')) isValid = false;
+                        }
+                    }
+                    if (funcao.value === 'fundepar') {
+                        if (!validateRadio('vinculo_fundepar', 'Selecione um vínculo.')) isValid = false;
+                        const vinculo = document.querySelector('input[name="vinculo_fundepar"]:checked');
+                        if (vinculo && vinculo.value === 'terceirizado') {
+                            if (!validate('empresa_fundepar', v => v.length > 0, 'Informe o nome da empresa.')) isValid = false;
+                        }
                     }
                 }
+
                 if (!validate('agencia', v => /^\d+$/.test(v), 'Agência inválida.')) isValid = false;
                 if (!validate('conta_corrente', v => /^\d+-\w{1}$/.test(v), 'Formato de conta inválido.')) isValid = false;
                 if (!validateCheck('termo_bancario', 'Você precisa aceitar os termos bancários.')) isValid = false;
@@ -251,4 +299,5 @@
 
 </body>
 </html>
+
 
